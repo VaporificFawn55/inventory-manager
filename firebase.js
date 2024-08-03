@@ -1,13 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
+require('dotenv').config();
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCX52lJCtBEw_WGTpSV4j5THnVXl9iCcGw",
+  apiKey: process.env.API_KEY,
   authDomain: "inventory-manager-5e552.firebaseapp.com",
   projectId: "inventory-manager-5e552",
   storageBucket: "inventory-manager-5e552.appspot.com",
